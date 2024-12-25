@@ -2,18 +2,21 @@ body {
     display: flex;
     background-color: rgb(0, 0, 0);
     color: black;
+    width: 100vh;
 }
 
 main {
     margin-top: 70px;
 }
 .chatbot {
-    position: relative;
+    flex: 1;
+    position: absolute;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     min-height: 100px;
-    width: 800px;
+    max-width: 1000px;
+    width: 80%;
     overflow: hidden;
     border-radius: 15px;
     border: 2px solid rgb(87, 87, 87);
@@ -162,17 +165,18 @@ main {
     display: flex;
     position: absolute;
     justify-content: center;
-    width: 800px;
-    bottom: 0;
+    width: 100%;
+    bottom: 10px;
     background-color: rgb(45, 45, 45);
-    padding: 15px 22px 20px;
+    padding: 15px 22px 30px -45px;
+
 }
 
 .chat-footer .chat-form {
+    position: relative;
     border: none;
     outline: none;
     display: flex;
-    align-items: center;
     background: white;
     outline: 1px solid rgb(204, 204, 204);
     border-radius: 32px;
